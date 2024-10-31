@@ -1,10 +1,9 @@
 {
   "files": {
-    "main.js": "/react-for-begin/static/js/main.40148b8a.js",
-    "index.html": "/react-for-begin/index.html",
-    "main.40148b8a.js.map": "/react-for-begin/static/js/main.40148b8a.js.map"
+    "main.js": "/react-for-begin/static/js/main.e1dde189.js",
+    "index.html": "/react-for-begin/index.html"
   },
   "entrypoints": [
-    "static/js/main.40148b8a.js"
+    "static/js/main.e1dde189.js"
   ]
 }
