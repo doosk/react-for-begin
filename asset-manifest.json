@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.js": "/react-for-begin/static/js/main.e1dde189.js",
-    "index.html": "/react-for-begin/index.html"
+    "main.js": "/static/js/main.44288d39.js",
+    "index.html": "/index.html"
   },
   "entrypoints": [
-    "static/js/main.e1dde189.js"
+    "static/js/main.44288d39.js"
   ]
 }
