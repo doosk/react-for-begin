@@ -5,7 +5,7 @@ function Button({ text }) {
     return <button className={styles.btn}>{text}</button>;
 }
 
-Button.prototype = {
+Button.propTypes = {
     text: PropTypes.string.isRequired,
 };
 
