@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import Movie from '../components/Movie';
 import axios from 'axios';
-import '../App.css';
+// import '../App.css';
 
 function Home() {
   const [loading, setLoading] = useState(true);
