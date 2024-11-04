@@ -28,13 +28,13 @@ function Home() {
   }, []);
   console.log(movies);
   return (
-    <section class='container'>
+    <section className='container'>
       {loading ? (
-        <div class='loader'>
-          <span class='loader_text'>Loading...</span>
+        <div className='loader'>
+          <span className='loader_text'>Loading...</span>
         </div>
       ) : (
-        <div class='movies'>
+        <div className='movies'>
           {movies.map((movie) => (
             <Movie
               key={movie.id}
