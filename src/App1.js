@@ -13,7 +13,7 @@ function App() {
 
   useEffect(() => {
     // 첫번째 인자 : callback 함수
-    // 두번째 인자 : 배열에 들어가 값이 변경되면 callback 함수가 실행된다. ([]= 처음 한번만 실행됨)
+    // 두번째 인자 : 배열에 들어가 값이 변경되면 callback 함수가 실행된다. ([]= 처음 한번만 실행됨)(객체인 경우 변경되지 않아도 실행됨)
     // useMemo와 가장 큰 차이점은 useEffect는 해당 컴포넌트의 렌더링이 완료된 후에 실행되고, useMemo는 렌더링 중에 실행된다.
     console.log('I run only once.');
   }, []);
