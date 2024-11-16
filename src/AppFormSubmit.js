@@ -1,8 +1,9 @@
 import { useEffect, useState } from 'react';
 
-function App() {
+export default function AppFormSubmit() {
   const [toDo, setToDo] = useState('');
   const [toDos, setToDos] = useState([]);
+
   const onChange = (e) => setToDo(e.target.value);
   const onSubmit = (e) => {
     e.preventDefault();
@@ -12,7 +13,9 @@ function App() {
     setToDos((currentArray) => [toDo, ...currentArray]);
     setToDo('');
   };
+
   console.log(toDos);
+
   return (
     <div>
       <h1>My To Dos ({toDos.length})</h1>
@@ -34,5 +37,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
