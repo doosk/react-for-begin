@@ -7,15 +7,14 @@ function Hello() {
   }, []);
   return <h1>Hello</h1>;
 }
-function App() {
+export default function AppUseEffectCleanUp() {
   const [showing, setShowing] = useState(false);
-  const onClick = () => setShowing((prev) => !prev);
   return (
     <div>
       {showing ? <Hello /> : null}
-      <button onClick={onClick}>{showing ? 'Hide' : 'Show'}</button>
+      <button onClick={() => setShowing((prev) => !prev)}>
+        {showing ? 'Hide' : 'Show'}
+      </button>
     </div>
   );
 }
-
-export default App;

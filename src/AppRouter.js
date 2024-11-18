@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './routes/Home';
 import Detail from './routes/Detail';
 
-function App() {
+export default function AppRouter() {
   console.log(process.env.PUBLIC_URL);
   return (
     <Router basename={process.env.PUBLIC_URL}>
@@ -14,5 +14,3 @@ function App() {
     </Router>
   );
 }
-
-export default App;

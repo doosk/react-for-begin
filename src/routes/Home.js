@@ -3,9 +3,10 @@ import Movie from '../components/Movie';
 import axios from 'axios';
 import '../App.css';
 
-function Home() {
+export default function Home() {
   const [loading, setLoading] = useState(true);
   const [movies, setMovies] = useState([]);
+
   const getMovies = async () => {
     //-- axios
     const json = await axios.get(
@@ -23,9 +24,11 @@ function Home() {
     // setMovies(json.data.movies);
     // setLoading(false);
   };
+
   useEffect(() => {
     getMovies();
   }, []);
+
   console.log(movies);
   return (
     <section className='container'>
@@ -51,5 +54,3 @@ function Home() {
     </section>
   );
 }
-
-export default Home;

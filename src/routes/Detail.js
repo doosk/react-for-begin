@@ -1,9 +1,10 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 
-function Detail() {
+export default function Detail() {
   const [loading, setLoading] = useState(true);
   const [movie, setMovie] = useState({});
+
   const { id } = useParams();
   const getMovie = async () => {
     const json = await (
@@ -12,9 +13,11 @@ function Detail() {
     setMovie(json.data.movie);
     setLoading(false);
   };
+
   useEffect(() => {
     getMovie();
   }, []);
+
   console.log(movie);
   return (
     <div>
@@ -30,4 +33,3 @@ function Detail() {
     </div>
   );
 }
-export default Detail;
